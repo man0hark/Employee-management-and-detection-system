@@ -11,7 +11,7 @@ import cv2
 import os
 import time
 face_classifier = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
-firebase = firebase.FirebaseApplication('https://icps-9cc0a.firebaseio.com/', None)
+firebase = firebase.FirebaseApplication('.........', None)
 import face_recognition
 import docopt 
 from sklearn import svm
@@ -20,8 +20,8 @@ import pickle
 s3 = boto3.resource(
     service_name='s3',
     region_name='us-east-2',
-    aws_access_key_id='AKIAWI34OZCUF7DLIFO3',
-    aws_secret_access_key='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'
+    aws_access_key_id='..........',
+    aws_secret_access_key='.............'
 )
 def face_recognize(test):
 	filename = 'svm_trained_model.sav'
